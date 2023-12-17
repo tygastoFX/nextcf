@@ -1,4 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+// next.config.js
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    experimental: {
+      runtime: 'experimental-edge',
+    },
+    reactStrictMode: true,
+    swcMinify: true,
+  }
+  module.exports = nextConfig
